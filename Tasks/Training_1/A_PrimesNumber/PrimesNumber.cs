@@ -3,10 +3,11 @@ using System.IO;
 
 namespace Tasks.Training_1
 {
-    public class PrimesNumber
+    public class PrimesNumber : ITask
     {
-        private const string InputFile = @"primes.in";
-        private const string OutputFile = @"primes.out";
+        private const string Training = @"Training_1/A_PrimesNumber/";
+        public string InputFile { get; } = Training + @"primes.in";
+        public string OutputFile { get; } = Training + @"primes.out";
 
         public void Resolve()
         {
@@ -23,7 +24,7 @@ namespace Tasks.Training_1
                     if (IsPrime(i))
                     {
                         existPrimes = true;
-                        writer.Write(i);
+                        writer.Write(i + " ");                   
                     }                       
                 }
 
@@ -32,17 +33,17 @@ namespace Tasks.Training_1
             }
         }
 
-        private bool IsPrime(int number)
+        private static bool IsPrime(int number)
         {
             var i = 2;
             while(i <= Math.Sqrt(number))
             {
                 if (number % i == 0)
-                    return true;
+                    return false;
                 i++;
             }
 
-            return false;
+            return true;
         }
     }
 }
