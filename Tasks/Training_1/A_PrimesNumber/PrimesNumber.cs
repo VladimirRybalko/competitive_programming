@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Tasks.Training_1
+namespace Tasks
 {
     public class PrimesNumber : ITask
     {
