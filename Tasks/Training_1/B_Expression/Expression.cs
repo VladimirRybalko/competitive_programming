@@ -1,43 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Tasks
 {
-    public class Expression : ITask
+    public class Expression : CompetitiveTask
     {
         private const string Training = @"Training_1/B_Expression/";
+
+        public override string InputFile { get; } = Training + @"expr.in";
+        public override string OutputFile { get; } = Training + @"expr.out";
 
         int[] x;
         char[] signs;
         int n;
         long S;
-
-
-        public void Resolve()
+        
+        protected override void Resolve(StreamReader reader, StreamWriter writer)
         {
-            x = new[] { 2, 3, 5, 6 };
-            n = 4;
+            var line1 = reader.ReadLine().Split(' ');
+            n = line1[0].ToInt();
+            S = line1[1].ToInt();
+
+            var line2 = reader.ReadLine();
+            x = line2.Split(' ').Select(x => x.ToInt()).ToArray();
             signs = new char[n];
-            S = 6;
+            
+            var result = Traverse(0, x[0], '+');
 
-            var result = Foo(0, x[0], '+');
-
-            Console.WriteLine(result);
-            Console.Write(x[0]);
-            for (int i = 1; i < n; i++)
+            if (!result)
+                writer.Write("No solution");
+            else
             {
-                Console.Write(signs[i]);
-                Console.Write(x[i]);
-            }
+                writer.Write(x[0]);
+                for (int i = 1; i < n; i++)
+                {
+                    writer.Write(signs[i]);
+                    writer.Write(x[i]);
+                }
 
-            Console.Write("=" + S);
-            Console.ReadLine();
+                writer.Write("=" + S);
+            }
         }
 
-        private bool Foo(int i, long sum, char sign)
+        private bool Traverse(int i, long sum, char sign)
         {
             signs[i] = sign;
 
@@ -45,17 +50,7 @@ namespace Tasks
                 return S == sum;
 
             i++;
-            return Foo(i, sum + x[i], '+') || Foo(i, sum - x[i], '-');
-        }
-
-        public string InputFile
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public string OutputFile
-        {
-            get { throw new NotImplementedException(); }
+            return Traverse(i, sum + x[i], '+') || Traverse(i, sum - x[i], '-');
         }
     }
 }
