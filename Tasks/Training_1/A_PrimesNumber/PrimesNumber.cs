@@ -11,10 +11,9 @@ namespace Tasks
 
         protected override void Resolve(StreamReader reader, StreamWriter writer)
         {
-            var spliting = reader.ReadLine().Split(' ');
-            var m = spliting[0].ToInt();
-            var n = spliting[1].ToInt();
-            
+            var m = reader.ReadInt();
+            var n = reader.ReadInt();
+
             var existPrimes = false;
             for (var i = m; i <= n; i++)
             {

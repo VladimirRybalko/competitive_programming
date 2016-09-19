@@ -17,12 +17,10 @@ namespace Tasks
         
         protected override void Resolve(StreamReader reader, StreamWriter writer)
         {
-            var line1 = reader.ReadLine().Split(' ');
-            n = line1[0].ToInt();
-            S = line1[1].ToInt();
-
-            var line2 = reader.ReadLine();
-            x = line2.Split(' ').Select(x => x.ToInt()).ToArray();
+            n = reader.ReadInt();
+            S = reader.ReadInt();
+            
+            x = reader.ReadIntArray();
             signs = new char[n];
             
             var result = Traverse(0, x[0], '+');
