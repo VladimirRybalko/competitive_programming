@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            new Expression().Resolve();
+            new RectanglePoint().Resolve();
         }
     }
 }

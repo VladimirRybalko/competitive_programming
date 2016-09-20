@@ -35,7 +35,34 @@ namespace Tasks
             points = reader.ReadIntArray();
             var x = new Point(points[0], points[1]);
 
-                        
+            var samePlane = StraightPlane(a, b, c) * StraightPlane(a, b, x);
+            if (samePlane < 0)
+            {
+                writer.WriteLine("Out");
+                return;
+            }
+
+            samePlane = StraightPlane(b, c, a) * StraightPlane(b, c, x);
+            if (samePlane < 0)
+            {
+                writer.WriteLine("Out");
+                return;
+            }
+
+            samePlane = StraightPlane(a, c, b) * StraightPlane(a, c, x);
+            if (samePlane < 0)
+            {
+                writer.WriteLine("Out");
+                return;
+            }
+
+            writer.WriteLine("In");
         }        
+
+
+        private double StraightPlane(Point a, Point b, Point c)
+        {
+            return (a.Y - b.Y) * c.X + (b.X - a.X) * c.Y + (a.X * b.Y - b.X * a.Y);
+        }
     }
 }

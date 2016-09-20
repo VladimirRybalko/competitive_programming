@@ -59,7 +59,9 @@
     <None Include="Training_1\B_Expression\expr.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Training_1\D_Rectangle_Point\tria-pt.in" />
+    <None Include="Training_1\D_Rectangle_Point\tria-pt.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Training_1\A_PrimesNumber\Statement.txt" />
