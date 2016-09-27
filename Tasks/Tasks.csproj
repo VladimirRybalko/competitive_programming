@@ -50,6 +50,7 @@
     <Compile Include="Training_1\A_PrimesNumber\PrimesNumber.cs" />
     <Compile Include="Training_1\B_Expression\Expression.cs" />
     <Compile Include="Training_1\D_Rectangle_Point\RectanglePoint.cs" />
+    <Compile Include="Training_1\F_Poker\Poker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -62,11 +63,15 @@
     <None Include="Training_1\D_Rectangle_Point\tria-pt.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Training_1\F_Poker\poker.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Training_1\A_PrimesNumber\Statement.txt" />
     <Content Include="Training_1\B_Expression\Statement.txt" />
     <Content Include="Training_1\D_Rectangle_Point\Statement.txt" />
+    <Content Include="Training_1\F_Poker\Statement.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
