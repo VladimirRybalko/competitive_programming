@@ -39,12 +39,12 @@ namespace Tasks
             {
                 c = (char)reader.Read();
                 sb.Append(c);
-            } while (c != ' ' && c != '\r' && c != '\n');
+            } while (c != ' ' && c != '\r' && c != '\n' && c != '\uffff');
 
             if (c == '\r') // read \n symbol
                 reader.Read();
 
-            return sb.ToString().ToInt();
+            return sb.ToString().TrimEnd('\uffff').ToInt();
         }
 
         /// <summary>

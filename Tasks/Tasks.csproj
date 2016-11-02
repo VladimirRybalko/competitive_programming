@@ -51,6 +51,7 @@
     <Compile Include="Training_1\B_Expression\Expression.cs" />
     <Compile Include="Training_1\C_Increasing_Subsequence\IncreasingSubsequence.cs" />
     <Compile Include="Training_1\D_Rectangle_Point\RectanglePoint.cs" />
+    <Compile Include="Training_1\E_Power\Power.cs" />
     <Compile Include="Training_1\F_Poker\Poker.cs" />
     <Compile Include="Training_2\A_PrimesNumber2\PrimesNumber2.cs" />
   </ItemGroup>
@@ -68,6 +69,9 @@
     <None Include="Training_1\D_Rectangle_Point\tria-pt.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Training_1\E_Power\power.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Training_1\F_Poker\poker.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -80,6 +84,7 @@
     <Content Include="Training_1\B_Expression\Statement.txt" />
     <Content Include="Training_1\C_Increasing_Subsequence\Statement.txt" />
     <Content Include="Training_1\D_Rectangle_Point\Statement.txt" />
+    <Content Include="Training_1\E_Power\Statement.txt" />
     <Content Include="Training_1\F_Poker\Statement.txt" />
     <Content Include="Training_2\A_PrimesNumber2\Statement.txt" />
   </ItemGroup>
