@@ -34,14 +34,37 @@ namespace Tasks
         public static int ReadInt(this StreamReader reader)
         {
             var sb = new StringBuilder();
-            int c;
+            char c;
             do
             {
-                c = reader.Read();
+                c = (char)reader.Read();
                 sb.Append(c);
-            } while (c != ' ');
+            } while (c != ' ' && c != '\r' && c != '\n');
+
+            if (c == '\r') // read \n symbol
+                reader.Read();
 
             return sb.ToString().ToInt();
+        }
+
+        /// <summary>
+        /// Convert string value to the equivalient long representation
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static long ToLong(this string value)
+        {
+            return long.Parse(value);
+        }
+
+        /// <summary>
+        /// Read long array from current file line
+        /// </summary>
+        /// <param name="reader"></param>
+        /// <returns></returns>
+        public static long[] ReadLongArray(this StreamReader reader)
+        {
+            return reader.ReadLine().Split(' ').Select(x => x.ToLong()).ToArray();
         }
     }
 }

@@ -49,8 +49,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Training_1\A_PrimesNumber\PrimesNumber.cs" />
     <Compile Include="Training_1\B_Expression\Expression.cs" />
+    <Compile Include="Training_1\C_Increasing_Subsequence\IncreasingSubsequence.cs" />
     <Compile Include="Training_1\D_Rectangle_Point\RectanglePoint.cs" />
     <Compile Include="Training_1\F_Poker\Poker.cs" />
+    <Compile Include="Training_2\A_PrimesNumber2\PrimesNumber2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -60,19 +62,28 @@
     <None Include="Training_1\B_Expression\expr.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Training_1\C_Increasing_Subsequence\inseq.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Training_1\D_Rectangle_Point\tria-pt.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Training_1\F_Poker\poker.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Training_2\A_PrimesNumber2\primes2.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Training_1\A_PrimesNumber\Statement.txt" />
     <Content Include="Training_1\B_Expression\Statement.txt" />
+    <Content Include="Training_1\C_Increasing_Subsequence\Statement.txt" />
     <Content Include="Training_1\D_Rectangle_Point\Statement.txt" />
     <Content Include="Training_1\F_Poker\Statement.txt" />
+    <Content Include="Training_2\A_PrimesNumber2\Statement.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

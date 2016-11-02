@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            new Poker().Resolve();
+            new IncreasingSubsequence().Resolve();
         }
     }
 }
