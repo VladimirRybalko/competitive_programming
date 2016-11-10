@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            new Power().Resolve();
+            new PrimesNumber2().Resolve();
         }
     }
 }
