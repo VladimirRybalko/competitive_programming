@@ -55,7 +55,7 @@
     <Compile Include="Training_1\F_Poker\Poker.cs" />
     <Compile Include="Training_2\B_Permutation\Permutation.cs" />
     <Compile Include="Training_2\A_PrimesNumber2\PrimesNumber2.cs" />
-    <Compile Include="Training_2\C_Longsum\Longsum.cs" />
+    <Compile Include="Training_2\E_Longsum\Longsum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -83,7 +83,7 @@
     <None Include="Training_2\A_PrimesNumber2\primes2.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Training_2\C_Longsum\longsum.in">
+    <None Include="Training_2\E_Longsum\longsum.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -96,7 +96,7 @@
     <Content Include="Training_1\F_Poker\Statement.txt" />
     <Content Include="Training_2\B_Permutation\Statement.txt" />
     <Content Include="Training_2\A_PrimesNumber2\Statement.txt" />
-    <Content Include="Training_2\C_Longsum\Statement.txt" />
+    <Content Include="Training_2\E_Longsum\Statement.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

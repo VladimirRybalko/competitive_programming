@@ -6,7 +6,7 @@ namespace Tasks
 {
     public class Longsum : CompetitiveTask
     {
-        private const string Training = @"Training_2/C_Longsum/";
+        private const string Training = @"Training_2/E_Longsum/";
         public override string InputFile { get; } = Training + @"longsum.in";
         public override string OutputFile { get; } = Training + @"longsum.out";
 
