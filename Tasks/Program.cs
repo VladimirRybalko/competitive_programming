@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            new PrimesNumber2().Resolve();
+            new Longsum().Resolve();
         }
     }
 }
