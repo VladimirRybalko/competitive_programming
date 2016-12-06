@@ -33,8 +33,7 @@ namespace Tasks
                 writer.Write(carry);
 
             foreach (var digit in digits.SkipWhile(x => x == 0))
-                writer.Write(digit);
-                
+                writer.Write(digit);                
         }
     }
 }

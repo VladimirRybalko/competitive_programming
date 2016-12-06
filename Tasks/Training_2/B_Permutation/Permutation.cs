@@ -12,8 +12,8 @@ namespace Tasks
         public override string OutputFile { get; } = Training + @"permut.out";
 
         protected override void Resolve(StreamReader reader, StreamWriter writer)
-        {            
-                                     
+        {
+            // NOT RESOLVED                                                 
         }
     }
 }

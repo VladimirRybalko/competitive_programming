@@ -55,6 +55,8 @@
     <Compile Include="Training_1\F_Poker\Poker.cs" />
     <Compile Include="Training_2\B_Permutation\Permutation.cs" />
     <Compile Include="Training_2\A_PrimesNumber2\PrimesNumber2.cs" />
+    <Compile Include="Training_2\C_Route\Route.cs" />
+    <Compile Include="Training_2\F_Spiral\Spiral.cs" />
     <Compile Include="Training_2\E_Longsum\Longsum.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +85,12 @@
     <None Include="Training_2\A_PrimesNumber2\primes2.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Training_2\C_Route\route.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Training_2\F_Spiral\spiral.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Training_2\E_Longsum\longsum.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -96,6 +104,8 @@
     <Content Include="Training_1\F_Poker\Statement.txt" />
     <Content Include="Training_2\B_Permutation\Statement.txt" />
     <Content Include="Training_2\A_PrimesNumber2\Statement.txt" />
+    <Content Include="Training_2\C_Route\Statement.txt" />
+    <Content Include="Training_2\F_Spiral\Statement.txt" />
     <Content Include="Training_2\E_Longsum\Statement.txt" />
   </ItemGroup>
   <ItemGroup />

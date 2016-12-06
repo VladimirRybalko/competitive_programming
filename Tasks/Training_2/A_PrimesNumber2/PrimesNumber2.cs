@@ -69,8 +69,7 @@ namespace Tasks
 
             return true;
         }
-
-
+        
         private static bool IsPrime(int number, int[] primes)
         {
             var i = 0;
