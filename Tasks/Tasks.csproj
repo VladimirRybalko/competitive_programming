@@ -59,6 +59,7 @@
     <Compile Include="Training_2\C_Route\Route.cs" />
     <Compile Include="Training_2\F_Spiral\Spiral.cs" />
     <Compile Include="Training_2\E_Longsum\Longsum.cs" />
+    <Compile Include="Training_3\A_PFactor\PFactor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -98,6 +99,9 @@
     <None Include="Training_2\E_Longsum\longsum.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Training_3\A_PFactor\pfactor.in">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Training_1\A_PrimesNumber\Statement.txt" />
@@ -112,6 +116,7 @@
     <Content Include="Training_2\C_Route\Statement.txt" />
     <Content Include="Training_2\F_Spiral\Statement.txt" />
     <Content Include="Training_2\E_Longsum\Statement.txt" />
+    <Content Include="Training_3\A_PFactor\Statement.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

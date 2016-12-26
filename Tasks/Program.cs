@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            new Segments().Resolve();
+            new PFactor().Resolve();
         }
     }
 }

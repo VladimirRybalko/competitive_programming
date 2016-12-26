@@ -33,6 +33,16 @@ namespace Tasks
         /// <returns></returns>
         public static int ReadInt(this StreamReader reader)
         {
+            return reader.ReadNumericString().ToInt();
+        }
+
+        public static long ReadLong(this StreamReader reader)
+        {
+            return reader.ReadNumericString().ToLong();
+        }
+
+        private static string ReadNumericString(this StreamReader reader)
+        {
             var sb = new StringBuilder();
             char c;
             do
@@ -44,7 +54,7 @@ namespace Tasks
             if (c == '\r') // read \n symbol
                 reader.Read();
 
-            return sb.ToString().TrimEnd('\uffff').ToInt();
+            return sb.ToString().TrimEnd('\uffff');
         }
 
         /// <summary>
