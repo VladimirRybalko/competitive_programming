@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            new Permutation().Resolve();
+            new Longprod().Resolve();
         }
     }
 }
