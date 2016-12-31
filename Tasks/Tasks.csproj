@@ -61,6 +61,7 @@
     <Compile Include="Training_2\E_Longsum\Longsum.cs" />
     <Compile Include="Training_3\E_Longprod\Longprod.cs" />
     <Compile Include="Training_3\A_PFactor\PFactor.cs" />
+    <Compile Include="Training_3\F_Serpent\Serpent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -106,6 +107,7 @@
     <None Include="Training_3\A_PFactor\pfactor.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Content Include="Training_3\F_Serpent\serpent.in" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Training_1\A_PrimesNumber\Statement.txt" />
@@ -122,8 +124,8 @@
     <Content Include="Training_2\E_Longsum\Statement.txt" />
     <Content Include="Training_3\E_Longprod\Statement.txt" />
     <Content Include="Training_3\A_PFactor\Statement.txt" />
+    <Content Include="Training_3\F_Serpent\Statement.txt" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
