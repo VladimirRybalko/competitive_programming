@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            new Longprod().Resolve();
+            new Piggy().Resolve();
         }
     }
 }
